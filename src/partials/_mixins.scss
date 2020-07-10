@@ -87,6 +87,18 @@
   .email {
     display: block;
     margin-top: 20px;
-    font-size: $font_size_didascalia;
+    font-size: $font_size_descrizione;
   }
 }
+
+// LISTA FONT SIZE
+// $lista: $font_size_h2 $font_size_h3;
+// @mixin lista_font_size ($index) {
+//   font-size: nth($lista, $index);
+// }
+//
+// // LISTA LINE HEIGHT
+// $listaa: $line_height_h2 $line_height_h3;
+// @mixin lista_line_height ($index) {
+//   line-height: nth($listaa, $index);
+// }
