@@ -19,6 +19,12 @@ h2 {
   margin-bottom: 20px;
 }
 
+h3 {
+  font-size: 30px;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
 p {
   margin: 10px 0;
 }
@@ -30,11 +36,6 @@ ul {
 img {
   width: 100%;
   vertical-align: middle;
-}
-
-.wrapper {
-  width: 100%;
-  padding: 0 20px;
 }
 
 .container {
@@ -59,7 +60,7 @@ img {
 
 .btn {
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 6px 10px;
   margin: 10px 0;
   white-space: nowrap;
 }
@@ -143,7 +144,6 @@ main {
 #jumbotron .container .cta .standard {
   display: inline-block;
   font-size: 15px;
-  padding: 8px 12px;
   color: #fff;
   background-color: #2d4691;
   border: 1px solid #2d4691;
@@ -154,8 +154,20 @@ main {
 }
 #jumbotron .container .cta .email {
   display: block;
-  margin-top: 25px;
+  margin-top: 20px;
   font-size: 15px;
+}
+
+#lavoro {
+  text-align: center;
+  background-color: #fee7d1;
+}
+#lavoro [class$=-teambit] .caratteristiche {
+  display: flex;
+  justify-content: space-around;
+}
+#lavoro [class$=-teambit] .caratteristiche .box {
+  flex-basis: 20%;
 }
 
 @media screen and (min-width: 992px) {

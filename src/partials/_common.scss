@@ -16,9 +16,23 @@ a {
   text-decoration: none;
 }
 
+@for $i from 2 through 3 {
+  h#{$i} {
+    font-size: $font_size_h#{$i};
+    line-height: $line_height_h#{$i};
+    margin-bottom: 20px;
+  }
+}
+
 h2 {
   font-size: $font_size_h2;
-  line-height: 80px;
+  line-height: $line_height_h2;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: $font_size_h3;
+  line-height: $line_height_h3;
   margin-bottom: 20px;
 }
 
@@ -33,11 +47,6 @@ ul {
 img {
   width: 100%;
   vertical-align: middle;
-}
-
-.wrapper {
-  width: 100%;
-  padding: 0 20px;
 }
 
 .container {

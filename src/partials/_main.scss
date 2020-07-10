@@ -13,3 +13,20 @@ main {
     @include cta;
   }
 }
+
+#lavoro {
+  text-align: center;
+  background-color: #fee7d1;
+
+  [class$="-teambit"] {
+
+    .caratteristiche {
+      @include display_flex;
+      justify-content: space-around;
+
+      .box {
+        flex-basis: 20%;
+      }
+    }
+  }
+}

@@ -9,179 +9,249 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
-    <div class="wrapper">
 
-      <!-- HEADER -->
-      <header>
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+
+          <!-- logo -->
+          <div class="logo">
+            <img src="img/logo.svg" alt="Teambit-logo">
+          </div>
+          <!-- fine logo -->
+
+          <!-- navigation -->
+          <div class="navigation">
+
+            <!-- lista link -->
+            <ul class="menu">
+              <li class="solution">
+                <a href="#">
+                  Solution
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+
+                <!-- dropdown -->
+                <ul class="dropdown">
+                  <li>
+                    <a href="#">
+                      elemento 1
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      elemento 2
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      elemento 3
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      elemento 4
+                    </a>
+                  </li>
+                </ul>
+                <!-- fine dropdown -->
+              </li>
+              <li class="pricing">
+                <a href="#">
+                  Pricing
+                </a>
+              </li>
+              <li class="blog">
+                <a href="#">
+                  Blog
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+
+                <!-- dropdown -->
+                <ul class="dropdown">
+                  <li>
+                    <a href="#">
+                      elemento 1
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      elemento 2
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      elemento 3
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      elemento 4
+                    </a>
+                  </li>
+                </ul>
+                <!-- fine dropdown -->
+              </li>
+              <li class="sing-in">
+                <a href="#">
+                  Sing in
+                </a>
+              </li>
+              <li>
+                <a class="btn sing-up" href="#">
+                  <img src="img/google-logo.svg" alt="google-logo">
+                  Sing up
+                </a>
+              </li>
+            </ul>
+            <!-- fine lista link -->
+
+            <!-- burger menu -->
+            <div id="burger-menu">
+              <i class="fas fa-bars"></i>
+            </div>
+            <!-- fine burger menu -->
+
+            <!-- chiudi menu -->
+            <div id="chiudi-menu">
+              <i class="fas fa-times"></i>
+            </div>
+            <!-- fine chiudi menu -->
+          </div>
+          <!-- fine navigation -->
+        </nav>
+        <!-- Fine Navbar -->
+      </div>
+    </header>
+    <!-- FINE HEADER -->
+
+    <!-- MAIN -->
+    <main>
+
+      <!-- Jumbotron -->
+      <section id="jumbotron" class="sezione">
         <div class="container">
 
-          <!-- Navbar -->
-          <nav class="navbar">
+          <!-- contenuto jumbotron -->
+          <div class="contenuto-jumbo">
+            <h2>Understand, recognize and develop your people</h2>
+            <p>Teambit helps teams create a high performing culture with regular feedback.</p>
 
-            <!-- logo -->
-            <div class="logo">
-              <img src="img/logo.svg" alt="Teambit-logo">
+            <div class="cta">
+
+              <!-- iscrizione con Google -->
+              <a class="btn standard" href="#">
+                <img src="img/google-logo.svg" alt="google-logo">
+                Sing up with Google
+              </a>
+
+              <span>&nbsp;or&nbsp;</span>
+
+              <!-- iscrizione con Slack -->
+              <a class="btn standard" href="#">
+                <img src="img/slack-logo.svg" alt="google-logo">
+                Sing up with Slack
+              </a>
+
+              <!-- iscrizione con Email -->
+              <a class="email" href="#">
+                or use your email address
+                <i class="fas fa-arrow-right"></i>
+              </a>
             </div>
-            <!-- fine logo -->
-
-            <!-- navigation -->
-            <div class="navigation">
-
-              <!-- lista link -->
-              <ul class="menu">
-                <li class="solution">
-                  <a href="#">
-                    Solution
-                    <i class="fas fa-chevron-down"></i>
-                  </a>
-
-                  <!-- dropdown -->
-                  <ul class="dropdown">
-                    <li>
-                      <a href="#">
-                        elemento 1
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        elemento 2
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        elemento 3
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        elemento 4
-                      </a>
-                    </li>
-                  </ul>
-                  <!-- fine dropdown -->
-                </li>
-                <li class="pricing">
-                  <a href="#">
-                    Pricing
-                  </a>
-                </li>
-                <li class="blog">
-                  <a href="#">
-                    Blog
-                    <i class="fas fa-chevron-down"></i>
-                  </a>
-
-                  <!-- dropdown -->
-                  <ul class="dropdown">
-                    <li>
-                      <a href="#">
-                        elemento 1
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        elemento 2
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        elemento 3
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        elemento 4
-                      </a>
-                    </li>
-                  </ul>
-                  <!-- fine dropdown -->
-                </li>
-                <li class="sing-in">
-                  <a href="#">
-                    Sing in
-                  </a>
-                </li>
-                <li>
-                  <a class="btn sing-up" href="#">
-                    <img src="img/google-logo.svg" alt="google-logo">
-                    Sing up
-                  </a>
-                </li>
-              </ul>
-              <!-- fine lista link -->
-
-              <!-- burger menu -->
-              <div id="burger-menu">
-                <i class="fas fa-bars"></i>
-              </div>
-              <!-- fine burger menu -->
-
-              <!-- chiudi menu -->
-              <div id="chiudi-menu">
-                <i class="fas fa-times"></i>
-              </div>
-              <!-- fine chiudi menu -->
-            </div>
-            <!-- fine navigation -->
-          </nav>
-          <!-- Fine Navbar -->
-        </div>
-      </header>
-      <!-- FINE HEADER -->
-
-      <!-- MAIN -->
-      <main>
-
-        <!-- Jumbotron -->
-        <section id="jumbotron" class="sezione">
-          <div class="container">
-
-            <!-- contenuto jumbotron -->
-            <div class="contenuto-jumbo">
-              <h2>Understand, recognize and develop your people</h2>
-              <p>Teambit helps teams create a high performing culture with regular feedback.</p>
-
-              <div class="cta">
-
-                <!-- iscrizione con Google -->
-                <a class="btn standard" href="#">
-                  <img src="img/google-logo.svg" alt="google-logo">
-                  Sing up with Google
-                </a>
-
-                <span>&nbsp;or&nbsp;</span>
-
-                <!-- iscrizione con Slack -->
-                <a class="btn standard" href="#">
-                  <img src="img/slack-logo.svg" alt="google-logo">
-                  Sing up with Slack
-                </a>
-
-                <!-- iscrizione con Email -->
-                <a class="email" href="#">
-                  or use your email address
-                  <i class="fas fa-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-            <!-- fine contenuto jumbotron -->
-
-            <!-- immagine jumbotron -->
-            <div class="immagine-jumbo">
-              <img src="img/illustration-main.jpg" alt="illustration-main">
-            </div>
-            <!-- fine immagine jumbotron -->
           </div>
-        </section>
-        <!-- Fine Jumbotron -->
-      </main>
-      <!-- FINE MAIN -->
+          <!-- fine contenuto jumbotron -->
 
-      <!-- FOOTER -->
-      <footer></footer>
-      <!-- FINE FOOTER -->
+          <!-- immagine jumbotron -->
+          <div class="immagine-jumbo">
+            <img src="img/illustration-main.jpg" alt="illustration-main">
+          </div>
+          <!-- fine immagine jumbotron -->
+        </div>
+      </section>
+      <!-- Fine Jumbotron -->
 
-    </div>
+      <!-- Lavoro -->
+      <section id="lavoro" class="sezione">
+        <div class="container">
+
+          <!-- senza teambit -->
+          <div class="senza-teambit">
+            <h3>Traditional people processes lead to disengagement and turnover.</h3>
+
+            <!-- caratteristiche -->
+            <div class="caratteristiche">
+
+              <!-- box 1 -->
+              <div class="box">
+
+                <!-- immagine -->
+                <div class="immagine">
+                  <img src="img/hardcore.png" alt="hardcore">
+                </div>
+
+                <!-- descrizione -->
+                <div class="descrizione">
+                  <p>Theay are hardcore, format and disconnected</p>
+                </div>
+              </div>
+              <!-- fine box 1 -->
+
+              <!-- box 2 -->
+              <div class="box">
+
+                <!-- immagine -->
+                <div class="immagine">
+                  <img src="img/hardcore.png" alt="hardcore">
+                </div>
+
+                <!-- descrizione -->
+                <div class="descrizione">
+                  <p>Theay are hardcore, format and disconnected</p>
+                </div>
+              </div>
+              <!-- fine box 2 -->
+
+              <!-- box 3 -->
+              <div class="box">
+
+                <!-- immagine -->
+                <div class="immagine">
+                  <img src="img/hardcore.png" alt="hardcore">
+                </div>
+
+                <!-- descrizione -->
+                <div class="descrizione">
+                  <p>Theay are hardcore, format and disconnected</p>
+                </div>
+              </div>
+              <!-- fine box 3 -->
+
+            </div>
+            <!-- fine caratteristiche -->
+
+            <!-- risultato -->
+            <!-- fine risultato -->
+          </div>
+          <!-- fine senza teambit -->
+
+          <!-- con teambit -->
+          <div class="con-teambit">
+
+          </div>
+          <!-- fine con teambit -->
+        </div>
+      </section>
+      <!-- Fine Lavoro -->
+    </main>
+    <!-- FINE MAIN -->
+
+    <!-- FOOTER -->
+    <footer></footer>
+    <!-- FINE FOOTER -->
 
     <!-- Script Javascript -->
     <script type="text/javascript" src="js/script.js"></script>
