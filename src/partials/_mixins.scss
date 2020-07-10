@@ -1,0 +1,76 @@
+@mixin display_flex {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin navigation_mobile {
+  display: none;
+  width: 100%;
+  padding: 20px;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+@mixin navigation_web {
+  @include display_flex;
+  flex-direction: row;
+  position: static;
+  padding: 0;
+}
+
+@mixin bottone {
+  border-radius: 5px;
+  padding: 5px 10px;
+
+  img {
+    width: 20px;
+  }
+}
+
+@mixin bottone_sm {
+  padding: 8px 12px;
+  color: #fff;
+  background-color: $colore_secondario;
+  border: 1px solid $colore_secondario;
+
+  &:hover {
+    color: $colore_secondario;
+    background-color: #fff;
+  }
+}
+
+@mixin bottone_xl {
+  padding: 12px 15px;
+  color: $colore_secondario;
+  background-color: #fff;
+  border: 1px solid $colore_secondario;
+
+  &:hover {
+    color: #fff;
+    background-color: $colore_secondario;
+  }
+}
+
+@mixin dropdown_mobile {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #fff;
+
+  > li {
+    padding: 10px;
+  }
+}
+
+@mixin dropdown_web {
+  width: auto;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  border: 1px solid $colore_primario;
+}

@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #58402c;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  color: #58402c;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.menu {
+  display: flex;
+}
+.menu > li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+.menu .dropdown {
+  display: none;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  font-size: 17px;
+  border-bottom: 1px solid #58402c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.navigation .menu {
+  display: none;
+  width: 100%;
+  padding: 20px;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-weight: bold;
+}
+.navigation .menu > li {
+  position: relative;
+}
+.navigation .menu > li i {
+  font-size: 13px;
+}
+.navigation .menu > li .dropdown {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #fff;
+}
+.navigation .menu > li .dropdown > li {
+  padding: 10px;
+}
+.navigation .menu .sing-up {
+  border-radius: 5px;
+  padding: 5px 10px;
+  padding: 12px 15px;
+  color: #2d4691;
+  background-color: #fff;
+  border: 1px solid #2d4691;
+  display: block;
+  text-align: center;
+}
+.navigation .menu .sing-up img {
+  width: 20px;
+}
+.navigation .menu .sing-up:hover {
+  color: #fff;
+  background-color: #2d4691;
+}
+
+#burger-menu,
+#chiudi-menu {
+  cursor: pointer;
+}
+
+#chiudi-menu {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .navigation .menu {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    padding: 0;
+  }
+  .navigation .menu > li {
+    margin-left: 20px;
+  }
+  .navigation .menu > li .dropdown {
+    width: auto;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    border: 1px solid #58402c;
+  }
+  .navigation .menu .sing-up {
+    display: inline;
+  }
+
+  #burger-menu {
+    display: none;
+  }
+}

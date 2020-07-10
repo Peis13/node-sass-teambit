@@ -1,0 +1,42 @@
+.navbar {
+  width: 100%;
+  height: 70px;
+  font-size: $font_size_header;
+  border-bottom: 1px solid $colore_primario;
+  @include display_flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.navigation .menu {
+  @include navigation_mobile;
+  font-weight: bold;
+
+  > li {
+    position: relative;
+
+    i {
+      font-size: $font_size_didascalia;
+    }
+
+    .dropdown {
+      @include dropdown_mobile;
+    }
+  }
+  .sing-up {
+    @include bottone;
+    @include bottone_xl;
+    display: block;
+    text-align: center;
+  }
+}
+
+#burger-menu,
+#chiudi-menu {
+  cursor: pointer;
+}
+
+#chiudi-menu {
+  display: none;
+}

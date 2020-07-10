@@ -5,3 +5,45 @@
   box-sizing: border-box;
 }
 // FINE RESET
+
+// STILI GENERALI
+body {
+  color: $colore_primario;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: $colore_primario;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.menu {
+  @include display_flex;
+
+  > li {
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  .dropdown {
+    display: none;
+  }
+}

@@ -1,0 +1,23 @@
+@media screen and (min-width: 992px) {
+
+  // HEADER
+  .navigation .menu {
+    @include navigation_web;
+
+    > li {
+      margin-left: 20px;
+
+      .dropdown {
+        @include dropdown_web;
+      }
+    }
+    .sing-up {
+      display: inline;
+    }
+  }
+
+  #burger-menu {
+    display: none;
+  }
+  // FINE HEADER
+}
