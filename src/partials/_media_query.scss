@@ -33,6 +33,38 @@
     [class$="-jumbo"] {
       width: 50%;
       margin-bottom: 0;
+
+      .email {
+        font-size: 15px;
+      }
+    }
+  }
+
+  #lavoro {
+    [class$="-teambit"] {
+
+      .caratteristiche {
+        flex-direction: row;
+        align-items: flex-start;
+
+        .box {
+          margin-bottom: $margin_btm_20;
+
+          .immagine {
+            height: 100px;
+
+            img {
+              height: 100%;
+            }
+          }
+          .descrizione {
+            font-size: 15px;
+          }
+        }
+      }
+      .risultato {
+        width: 30%;
+      }
     }
   }
   // FINE MAIN

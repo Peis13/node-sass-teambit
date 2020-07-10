@@ -91,14 +91,31 @@
   }
 }
 
-// LISTA FONT SIZE
-// $lista: $font_size_h2 $font_size_h3;
-// @mixin lista_font_size ($index) {
-//   font-size: nth($lista, $index);
-// }
-//
-// // LISTA LINE HEIGHT
-// $listaa: $line_height_h2 $line_height_h3;
-// @mixin lista_line_height ($index) {
-//   line-height: nth($listaa, $index);
-// }
+@mixin caratteristiche {
+  @include display_flex;
+  margin: 40px 0;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  .box {
+    @include box;
+  }
+}
+
+@mixin box {
+  margin-bottom: $margin_btm_20 * 3;
+
+  .immagine {
+    margin: 30px auto;
+    height: 200px;
+
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+  .descrizione {
+    font-size: $font_size_descrizione;
+  }
+}

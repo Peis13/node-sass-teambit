@@ -19,14 +19,17 @@ main {
   background-color: #fee7d1;
 
   [class$="-teambit"] {
-
     .caratteristiche {
       @include display_flex;
-      justify-content: space-around;
-
-      .box {
-        flex-basis: 20%;
-      }
+      @include caratteristiche;
     }
+    .risultato {
+      width: 70%;
+      margin: auto;
+      margin-bottom: 100px;
+    }
+  }
+  hr {
+    margin-bottom: 100px;
   }
 }

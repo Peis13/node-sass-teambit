@@ -9,48 +9,22 @@
 // STILI GENERALI
 body {
   color: $colore_primario;
+  font-size: $font_size_generale;
 }
 
 a {
   color: $colore_primario;
   text-decoration: none;
 }
-//
-// @for $i from 2 through 3 {
-//   h#{$i} {
-//     font-size: $font_size_h#{$i};
-//     line-height: $line_height_h#{$i};
-//     margin-bottom: 20px;
-//   }
-// }
-// $list-font-size: 50px 30px;
-// $list-line-heigth: 80px 50px;
+
+// Genera h2 e h3
 @for $i from 2 through 3 {
-   h#{$i} {
-     font-size: nth($list-font-size, $i - 1);
-     line-height: nth($list-line-height, $i -1);
-     margin-bottom: 20px;
-   }
- }
-
-
-// $numero_elemento: 1;
-// h2 {
-//   // font-size: $font_size_h2;
-//   // line-height: $line_height_h2;
-//   @include lista_font_size($numero_elemento);
-//   @include lista_line_height($numero_elemento);
-//   margin-bottom: 20px;
-// }
-//
-// $numero_elemento: 2;
-// h3 {
-//   // font-size: $font_size_h3;
-//   // line-height: $line_height_h3;
-//   @include lista_font_size($numero_elemento);
-//   @include lista_line_height($numero_elemento);
-//   margin-bottom: 20px;
-// }
+  h#{$i} {
+    font-size: nth($list-font-size-h, $i - 1);
+    line-height: nth($list-line-height-h, $i - 1);
+    margin-bottom: $margin_btm_20;
+  }
+}
 
 p {
   margin: 10px 0;
@@ -66,7 +40,7 @@ img {
 }
 
 .container {
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 

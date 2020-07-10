@@ -6,6 +6,7 @@
 
 body {
   color: #58402c;
+  font-size: 22px;
 }
 
 a {
@@ -13,6 +14,17 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  font-size: 50px;
+  line-height: 80px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
 
 p {
   margin: 10px 0;
@@ -28,7 +40,7 @@ img {
 }
 
 .container {
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 
@@ -144,7 +156,7 @@ main {
 #jumbotron .container .cta .email {
   display: block;
   margin-top: 20px;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 #lavoro {
@@ -153,10 +165,33 @@ main {
 }
 #lavoro [class$=-teambit] .caratteristiche {
   display: flex;
+  display: flex;
+  margin: 40px 0;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 #lavoro [class$=-teambit] .caratteristiche .box {
-  flex-basis: 20%;
+  margin-bottom: 60px;
+}
+#lavoro [class$=-teambit] .caratteristiche .box .immagine {
+  margin: 30px auto;
+  height: 200px;
+}
+#lavoro [class$=-teambit] .caratteristiche .box .immagine img {
+  width: auto;
+  height: 100%;
+}
+#lavoro [class$=-teambit] .caratteristiche .box .descrizione {
+  font-size: 18px;
+}
+#lavoro [class$=-teambit] .risultato {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+#lavoro hr {
+  margin-bottom: 100px;
 }
 
 @media screen and (min-width: 992px) {
@@ -197,5 +232,28 @@ main {
   #jumbotron .container [class$=-jumbo] {
     width: 50%;
     margin-bottom: 0;
+  }
+  #jumbotron .container [class$=-jumbo] .email {
+    font-size: 15px;
+  }
+
+  #lavoro [class$=-teambit] .caratteristiche {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #lavoro [class$=-teambit] .caratteristiche .box {
+    margin-bottom: 20px;
+  }
+  #lavoro [class$=-teambit] .caratteristiche .box .immagine {
+    height: 100px;
+  }
+  #lavoro [class$=-teambit] .caratteristiche .box .immagine img {
+    height: 100%;
+  }
+  #lavoro [class$=-teambit] .caratteristiche .box .descrizione {
+    font-size: 15px;
+  }
+  #lavoro [class$=-teambit] .risultato {
+    width: 30%;
   }
 }
