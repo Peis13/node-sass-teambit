@@ -20,4 +20,20 @@
     display: none;
   }
   // FINE HEADER
+
+  // MAIN
+  main {
+    text-align: left;
+  }
+
+  #jumbotron .container {
+    @include display_flex;
+    flex-direction: row;
+
+    [class$="-jumbo"] {
+      width: 50%;
+      margin-bottom: 0;
+    }
+  }
+  // FINE MAIN
 }

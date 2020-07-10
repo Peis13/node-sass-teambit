@@ -24,6 +24,8 @@
 @mixin bottone {
   border-radius: 5px;
   padding: 5px 10px;
+  margin: 10px 0;
+  white-space: nowrap;
 
   img {
     width: 20px;
@@ -31,6 +33,8 @@
 }
 
 @mixin bottone_sm {
+  display: inline-block;
+  font-size: $font_size_btn;
   padding: 8px 12px;
   color: #fff;
   background-color: $colore_secondario;
@@ -73,4 +77,17 @@
   transform: translateX(-50%);
   white-space: nowrap;
   border: 1px solid $colore_primario;
+}
+
+@mixin cta {
+  margin-top: 50px;
+
+  .standard {
+    @include bottone_sm;
+  }
+  .email {
+    display: block;
+    margin-top: 25px;
+    font-size: $font_size_didascalia;
+  }
 }

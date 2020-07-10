@@ -1,0 +1,15 @@
+main {
+  text-align: center;
+}
+
+#jumbotron .container {
+  @include display_flex;
+  flex-direction: column;
+
+  [class$="-jumbo"] {
+    margin-bottom: 30px;
+  }
+  .cta {
+    @include cta;
+  }
+}

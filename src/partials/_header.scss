@@ -12,6 +12,7 @@
 .navigation .menu {
   @include navigation_mobile;
   font-weight: bold;
+  background-color: #fff;
 
   > li {
     position: relative;
@@ -25,7 +26,6 @@
     }
   }
   .sing-up {
-    @include bottone;
     @include bottone_xl;
     display: block;
     text-align: center;

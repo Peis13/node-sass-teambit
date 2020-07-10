@@ -6,12 +6,21 @@
 
 body {
   color: #58402c;
-  font-family: "Lato", sans-serif;
 }
 
 a {
   color: #58402c;
   text-decoration: none;
+}
+
+h2 {
+  font-size: 50px;
+  line-height: 80px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
 }
 
 ul {
@@ -33,6 +42,10 @@ img {
   margin: auto;
 }
 
+.sezione {
+  padding: 40px 0;
+}
+
 .menu {
   display: flex;
 }
@@ -42,6 +55,16 @@ img {
 }
 .menu .dropdown {
   display: none;
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 10px 0;
+  white-space: nowrap;
+}
+.btn img {
+  width: 20px;
 }
 
 .navbar {
@@ -64,12 +87,13 @@ img {
   top: 100%;
   left: 0;
   font-weight: bold;
+  background-color: #fff;
 }
 .navigation .menu > li {
   position: relative;
 }
 .navigation .menu > li i {
-  font-size: 13px;
+  font-size: 15px;
 }
 .navigation .menu > li .dropdown {
   width: 100%;
@@ -81,17 +105,12 @@ img {
   padding: 10px;
 }
 .navigation .menu .sing-up {
-  border-radius: 5px;
-  padding: 5px 10px;
   padding: 12px 15px;
   color: #2d4691;
   background-color: #fff;
   border: 1px solid #2d4691;
   display: block;
   text-align: center;
-}
-.navigation .menu .sing-up img {
-  width: 20px;
 }
 .navigation .menu .sing-up:hover {
   color: #fff;
@@ -105,6 +124,38 @@ img {
 
 #chiudi-menu {
   display: none;
+}
+
+main {
+  text-align: center;
+}
+
+#jumbotron .container {
+  display: flex;
+  flex-direction: column;
+}
+#jumbotron .container [class$=-jumbo] {
+  margin-bottom: 30px;
+}
+#jumbotron .container .cta {
+  margin-top: 50px;
+}
+#jumbotron .container .cta .standard {
+  display: inline-block;
+  font-size: 15px;
+  padding: 8px 12px;
+  color: #fff;
+  background-color: #2d4691;
+  border: 1px solid #2d4691;
+}
+#jumbotron .container .cta .standard:hover {
+  color: #2d4691;
+  background-color: #fff;
+}
+#jumbotron .container .cta .email {
+  display: block;
+  margin-top: 25px;
+  font-size: 15px;
 }
 
 @media screen and (min-width: 992px) {
@@ -132,5 +183,18 @@ img {
 
   #burger-menu {
     display: none;
+  }
+
+  main {
+    text-align: left;
+  }
+
+  #jumbotron .container {
+    display: flex;
+    flex-direction: row;
+  }
+  #jumbotron .container [class$=-jumbo] {
+    width: 50%;
+    margin-bottom: 0;
   }
 }

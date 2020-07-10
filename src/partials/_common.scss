@@ -9,12 +9,21 @@
 // STILI GENERALI
 body {
   color: $colore_primario;
-  font-family: 'Lato', sans-serif;
 }
 
 a {
   color: $colore_primario;
   text-decoration: none;
+}
+
+h2 {
+  font-size: $font_size_h2;
+  line-height: 80px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
 }
 
 ul {
@@ -36,6 +45,10 @@ img {
   margin: auto;
 }
 
+.sezione {
+  padding: 40px 0;
+}
+
 .menu {
   @include display_flex;
 
@@ -46,4 +59,8 @@ img {
   .dropdown {
     display: none;
   }
+}
+
+.btn {
+  @include bottone;
 }
