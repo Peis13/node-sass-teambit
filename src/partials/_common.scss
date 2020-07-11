@@ -20,14 +20,14 @@ a {
 // Genera h2 e h3
 @for $i from 2 through 3 {
   h#{$i} {
-    font-size: nth($list-font-size-h, $i - 1);
-    line-height: nth($list-line-height-h, $i - 1);
-    margin-bottom: $margin_btm_20;
+    font-size: nth($lista-font-size-h, $i - 1);
+    line-height: nth($lista-line-height-h, $i - 1);
+    margin-bottom: nth($lista_margini, 2);
   }
 }
 
 p {
-  margin: 10px 0;
+  margin: nth($lista_margini, 1) 0;
 }
 
 ul {
@@ -40,7 +40,7 @@ img {
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 

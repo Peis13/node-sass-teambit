@@ -1,11 +1,17 @@
 @media screen and (min-width: 992px) {
 
+  // COMMON
+
+  .container {
+    width: 80%;
+  }
+
   // HEADER
   .navigation .menu {
     @include navigation_web;
 
     > li {
-      margin-left: 20px;
+      margin-left: nth($lista_margini, 2);
 
       .dropdown {
         @include dropdown_web;
@@ -34,7 +40,7 @@
       width: 50%;
       margin-bottom: 0;
 
-      .email {
+      .accesso-email {
         font-size: 15px;
       }
     }
@@ -48,7 +54,7 @@
         align-items: flex-start;
 
         .box {
-          margin-bottom: $margin_btm_20;
+          margin-bottom: nth($lista_margini, 2);
 
           .immagine {
             height: 100px;
@@ -64,6 +70,44 @@
       }
       .risultato {
         width: 30%;
+      }
+    }
+  }
+
+
+  #community {
+    padding: 40px 20px;
+
+    .riga {
+      width: 80%;
+      margin-bottom: nth($lista_margini, 6);
+      @include display_flex;
+
+      &.sinistra {
+        margin-right: auto;
+        flex-direction: row;
+      }
+      &.destra {
+        margin-left: auto;
+        flex-direction: row-reverse;
+      }
+      .immagine {
+        width: 60%;
+        margin-bottom: 0;
+      }
+      .descrizione {
+        width: 40%;
+        h3 {
+          margin-bottom: nth($lista_margini, 6);
+        }
+        p {
+          margin-bottom: nth($lista_margini, 4);
+        }
+        .learn-more {
+          display: block;
+          color: $colore_secondario;
+          margin-bottom: nth($lista_margini, 2);
+        }
       }
     }
   }

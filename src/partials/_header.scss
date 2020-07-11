@@ -1,12 +1,5 @@
 .navbar {
-  width: 100%;
-  height: 70px;
-  font-size: $font_size_header;
-  border-bottom: 1px solid $colore_primario;
-  @include display_flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
+  @include navbar;
 }
 
 .navigation .menu {

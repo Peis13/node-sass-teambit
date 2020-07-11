@@ -7,7 +7,7 @@ main {
   flex-direction: column;
 
   [class$="-jumbo"] {
-    margin-bottom: 30px;
+    margin-bottom: nth($lista_margini, 3);
   }
   .cta {
     @include cta;
@@ -16,7 +16,7 @@ main {
 
 #lavoro {
   text-align: center;
-  background-color: #fee7d1;
+  background-color: $backgr_secondario;
 
   [class$="-teambit"] {
     .caratteristiche {
@@ -24,12 +24,18 @@ main {
       @include caratteristiche;
     }
     .risultato {
-      width: 70%;
-      margin: auto;
-      margin-bottom: 100px;
+      @include risultato;
     }
   }
   hr {
-    margin-bottom: 100px;
+    margin-bottom: nth($lista_margini, 10);
+  }
+}
+
+#community {
+  padding: 20px;
+
+  .riga {
+    @include riga;
   }
 }
