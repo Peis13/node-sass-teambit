@@ -48,6 +48,11 @@ img {
   padding: 40px 0;
 }
 
+.sezione.secondaria {
+  text-align: center;
+  background-color: $backgr_secondario;
+}
+
 .menu {
   @include display_flex;
 
@@ -58,6 +63,10 @@ img {
   .dropdown {
     display: none;
   }
+}
+
+.cta {
+  @include cta;
 }
 
 .btn {

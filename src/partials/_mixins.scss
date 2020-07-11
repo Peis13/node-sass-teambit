@@ -172,3 +172,45 @@
   color: $colore_secondario;
   margin-bottom: nth($lista_margini, 2);
 }
+
+@mixin messaggio {
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+  font-size: $font_size_descrizione;
+  border: 2px solid $colore_primario;
+  background-color: $backgr_primario;
+  position: relative;
+
+  .icona-messaggio {
+    @include icona_messaggio;
+  }
+  .fondatori {
+    @include fondatori;
+  }
+}
+
+@mixin icona_messaggio {
+  color: $colore_secondario;
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+@mixin fondatori {
+  @include display_flex;
+  align-items: center;
+
+  .immagini {
+    img {
+      width: 70px;
+      margin-right: nth($lista_margini, 2);
+    }
+  }
+  .nomi-fondatori {
+    font-weight: bold;
+    color: $colore_secondario;
+  }
+}

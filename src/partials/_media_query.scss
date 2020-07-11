@@ -97,17 +97,24 @@
       }
       .descrizione {
         width: 40%;
-        h3 {
-          margin-bottom: nth($lista_margini, 6);
+      }
+    }
+  }
+
+
+  #visione {
+    .container {
+      width: 50%;
+
+      h2 {
+        margin-bottom: nth($lista_margini, 6);
+        img {
+          width: 30px;
+          vertical-align: baseline;
         }
-        p {
-          margin-bottom: nth($lista_margini, 4);
-        }
-        .learn-more {
-          display: block;
-          color: $colore_secondario;
-          margin-bottom: nth($lista_margini, 2);
-        }
+      }
+      .messaggio {
+        @include messaggio;
       }
     }
   }

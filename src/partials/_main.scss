@@ -9,15 +9,9 @@ main {
   [class$="-jumbo"] {
     margin-bottom: nth($lista_margini, 3);
   }
-  .cta {
-    @include cta;
-  }
 }
 
 #lavoro {
-  text-align: center;
-  background-color: $backgr_secondario;
-
   [class$="-teambit"] {
     .caratteristiche {
       @include display_flex;
@@ -37,5 +31,19 @@ main {
 
   .riga {
     @include riga;
+  }
+}
+
+#visione {
+
+  h2 {
+    margin-bottom: nth($lista_margini, 6);
+    img {
+      width: 30px;
+      vertical-align: baseline;
+    }
+  }
+  .messaggio {
+    @include messaggio;
   }
 }

@@ -48,6 +48,11 @@ img {
   padding: 40px 0;
 }
 
+.sezione.secondaria {
+  text-align: center;
+  background-color: #fee7d1;
+}
+
 .menu {
   display: flex;
 }
@@ -57,6 +62,26 @@ img {
 }
 .menu .dropdown {
   display: none;
+}
+
+.cta {
+  margin-top: 50px;
+}
+.cta .standard {
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  background-color: #2d4691;
+  border: 1px solid #2d4691;
+}
+.cta .standard:hover {
+  color: #2d4691;
+  background-color: #fff;
+}
+.cta .accesso-email {
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
 }
 
 .btn {
@@ -139,30 +164,7 @@ main {
 #jumbotron .container [class$=-jumbo] {
   margin-bottom: 30px;
 }
-#jumbotron .container .cta {
-  margin-top: 50px;
-}
-#jumbotron .container .cta .standard {
-  display: inline-block;
-  font-size: 15px;
-  color: #fff;
-  background-color: #2d4691;
-  border: 1px solid #2d4691;
-}
-#jumbotron .container .cta .standard:hover {
-  color: #2d4691;
-  background-color: #fff;
-}
-#jumbotron .container .cta .accesso-email {
-  display: block;
-  margin-top: 20px;
-  font-size: 18px;
-}
 
-#lavoro {
-  text-align: center;
-  background-color: #fee7d1;
-}
 #lavoro [class$=-teambit] .caratteristiche {
   display: flex;
   display: flex;
@@ -220,6 +222,43 @@ main {
   display: block;
   color: #2d4691;
   margin-bottom: 20px;
+}
+
+#visione h2 {
+  margin-bottom: 60px;
+}
+#visione h2 img {
+  width: 30px;
+  vertical-align: baseline;
+}
+#visione .messaggio {
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+  font-size: 18px;
+  border: 2px solid #58402c;
+  background-color: #fff;
+  position: relative;
+}
+#visione .messaggio .icona-messaggio {
+  color: #2d4691;
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+}
+#visione .messaggio .fondatori {
+  display: flex;
+  align-items: center;
+}
+#visione .messaggio .fondatori .immagini img {
+  width: 70px;
+  margin-right: 20px;
+}
+#visione .messaggio .fondatori .nomi-fondatori {
+  font-weight: bold;
+  color: #2d4691;
 }
 
 @media screen and (min-width: 992px) {
@@ -312,15 +351,44 @@ main {
   #community .riga .descrizione {
     width: 40%;
   }
-  #community .riga .descrizione h3 {
+
+  #visione .container {
+    width: 50%;
+  }
+  #visione .container h2 {
     margin-bottom: 60px;
   }
-  #community .riga .descrizione p {
-    margin-bottom: 40px;
+  #visione .container h2 img {
+    width: 30px;
+    vertical-align: baseline;
   }
-  #community .riga .descrizione .learn-more {
-    display: block;
+  #visione .container .messaggio {
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 18px;
+    border: 2px solid #58402c;
+    background-color: #fff;
+    position: relative;
+  }
+  #visione .container .messaggio .icona-messaggio {
     color: #2d4691;
-    margin-bottom: 20px;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  #visione .container .messaggio .fondatori {
+    display: flex;
+    align-items: center;
+  }
+  #visione .container .messaggio .fondatori .immagini img {
+    width: 70px;
+    margin-right: 20px;
+  }
+  #visione .container .messaggio .fondatori .nomi-fondatori {
+    font-weight: bold;
+    color: #2d4691;
   }
 }
