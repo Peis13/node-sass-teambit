@@ -1,0 +1,36 @@
+footer {
+  .teambit {
+    @include display_flex;
+    margin-bottom: nth($lista_margini, 3);
+
+    .logo {
+      width: 20%;
+      min-width: 50px;
+      max-width: 100px;
+      margin-right: nth($lista_margini, 3);
+    }
+    .slogan {
+      font-size: $font_size_slogan;
+
+      .nome-azienda {
+        font-size: 20px;
+        color: $colore_secondario;
+      }
+    }
+  }
+  .menu {
+    flex-wrap: wrap;
+
+    > .link {
+      width: calc(100% / 3);
+      margin-bottom: nth($lista_margini, 3);
+
+      .lista-link {
+        li {
+          padding: 10px 0;
+        }
+
+      }
+    }
+  }
+}

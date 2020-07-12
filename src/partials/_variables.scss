@@ -1,3 +1,8 @@
+// GRANDEZZE
+$container_web_width: 80%;
+$container_mobile_width: 90%;
+// FINE GRANDEZZE
+
 // COLORI
 $colore_primario: #58402c;
 $colore_secondario: #2d4691;
@@ -9,16 +14,17 @@ $backgr_primario: #fff;
 $backgr_secondario: #fee7d1;
 
 // FONT-SIZE
-$lista-font-size-h: 50px 30px;
+$lista-font-size-h: 50px 30px 20px;
 $font_size_generale: 22px;
 $font_size_header: 17px;
 $font_size_btn: 15px;
 $font_size_icona: 15px;
 $font_size_descrizione: 18px;
+$font_size_slogan: 25px;
 // FINE FONT-SIZE
 
 // LINE HEIGHT
-$lista-line-height-h: 80px 50px;
+$lista-line-height-h: 80px 50px 30px;
 // FINE LINE HEIGHT
 
 // MARGINI

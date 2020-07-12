@@ -18,7 +18,7 @@ a {
 }
 
 // Genera h2 e h3
-@for $i from 2 through 3 {
+@for $i from 2 through 4 {
   h#{$i} {
     font-size: nth($lista-font-size-h, $i - 1);
     line-height: nth($lista-line-height-h, $i - 1);
@@ -39,14 +39,21 @@ img {
   vertical-align: middle;
 }
 
+// Impaginazione
 .container {
-  width: 90%;
+  width: $container_mobile_width;
   margin: auto;
+}
+
+.container.wide {
+  width: auto;
+  padding: 0 20px;
 }
 
 .sezione {
   padding: 40px 0;
 }
+// Fine Impaginazione
 
 .sezione.secondaria {
   text-align: center;
@@ -55,14 +62,6 @@ img {
 
 .menu {
   @include display_flex;
-
-  > li {
-    padding: 10px 0;
-    cursor: pointer;
-  }
-  .dropdown {
-    display: none;
-  }
 }
 
 .cta {

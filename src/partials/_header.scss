@@ -8,6 +8,8 @@
   background-color: #fff;
 
   > li {
+    padding: 10px 0;
+    cursor: pointer;
     position: relative;
 
     i {
@@ -15,6 +17,7 @@
     }
     .dropdown {
       @include dropdown_mobile;
+      display: none;
     }
   }
   .sing-up {

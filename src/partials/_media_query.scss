@@ -1,9 +1,12 @@
 @media screen and (min-width: 992px) {
 
   // COMMON
-
   .container {
-    width: 80%;
+    width: $container_web_width;
+  }
+
+  .container.wide {
+    padding: 0;
   }
 
   // HEADER
@@ -74,10 +77,7 @@
     }
   }
 
-
   #community {
-    padding: 40px 20px;
-
     .riga {
       width: 80%;
       margin-bottom: nth($lista_margini, 6);
@@ -119,4 +119,37 @@
     }
   }
   // FINE MAIN
+
+  // FOOTER
+  footer .container.wide {
+    width: $container_web_width;
+    @include display_flex;
+
+    .teambit {
+      width: calc((100% / 7) * 2);
+      padding: 0 10px;
+      margin-bottom: 0;
+
+      .logo {
+        margin-right: nth($lista_margini, 2);
+      }
+      .slogan {
+        font-size: 18px;
+
+        .nome-azienda {
+          font-size: 15px;
+        }
+      }
+    }
+    .menu {
+      width: calc((100% / 7) * 5);
+
+      > .link {
+        width: calc(100% / 5);
+        padding: 0 10px;
+      }
+    }
+  }
+
+  // FINE FOOTER
 }

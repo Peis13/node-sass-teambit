@@ -26,6 +26,12 @@ h3 {
   margin-bottom: 20px;
 }
 
+h4 {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
 p {
   margin: 10px 0;
 }
@@ -44,6 +50,11 @@ img {
   margin: auto;
 }
 
+.container.wide {
+  width: auto;
+  padding: 0 20px;
+}
+
 .sezione {
   padding: 40px 0;
 }
@@ -55,13 +66,6 @@ img {
 
 .menu {
   display: flex;
-}
-.menu > li {
-  padding: 10px 0;
-  cursor: pointer;
-}
-.menu .dropdown {
-  display: none;
 }
 
 .cta {
@@ -117,6 +121,8 @@ img {
   background-color: #fff;
 }
 .navigation .menu > li {
+  padding: 10px 0;
+  cursor: pointer;
   position: relative;
 }
 .navigation .menu > li i {
@@ -127,6 +133,7 @@ img {
   padding: 10px;
   border: none;
   background-color: #fff;
+  display: none;
 }
 .navigation .menu > li .dropdown > li {
   padding: 10px;
@@ -196,9 +203,6 @@ main {
   margin-bottom: 100px;
 }
 
-#community {
-  padding: 20px;
-}
 #community .riga {
   display: flex;
   margin-bottom: 100px;
@@ -261,9 +265,41 @@ main {
   color: #2d4691;
 }
 
+footer .teambit {
+  display: flex;
+  margin-bottom: 30px;
+}
+footer .teambit .logo {
+  width: 20%;
+  min-width: 50px;
+  max-width: 100px;
+  margin-right: 30px;
+}
+footer .teambit .slogan {
+  font-size: 25px;
+}
+footer .teambit .slogan .nome-azienda {
+  font-size: 20px;
+  color: #2d4691;
+}
+footer .menu {
+  flex-wrap: wrap;
+}
+footer .menu > .link {
+  width: calc(100% / 3);
+  margin-bottom: 30px;
+}
+footer .menu > .link .lista-link li {
+  padding: 10px 0;
+}
+
 @media screen and (min-width: 992px) {
   .container {
     width: 80%;
+  }
+
+  .container.wide {
+    padding: 0;
   }
 
   .navigation .menu {
@@ -328,9 +364,6 @@ main {
     width: 30%;
   }
 
-  #community {
-    padding: 40px 20px;
-  }
   #community .riga {
     width: 80%;
     margin-bottom: 60px;
@@ -390,5 +423,31 @@ main {
   #visione .container .messaggio .fondatori .nomi-fondatori {
     font-weight: bold;
     color: #2d4691;
+  }
+
+  footer .container.wide {
+    width: 80%;
+    display: flex;
+  }
+  footer .container.wide .teambit {
+    width: calc((100% / 7) * 2);
+    padding: 0 10px;
+    margin-bottom: 0;
+  }
+  footer .container.wide .teambit .logo {
+    margin-right: 20px;
+  }
+  footer .container.wide .teambit .slogan {
+    font-size: 18px;
+  }
+  footer .container.wide .teambit .slogan .nome-azienda {
+    font-size: 15px;
+  }
+  footer .container.wide .menu {
+    width: calc((100% / 7) * 5);
+  }
+  footer .container.wide .menu > .link {
+    width: calc(100% / 5);
+    padding: 0 10px;
   }
 }

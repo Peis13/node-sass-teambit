@@ -27,15 +27,12 @@ main {
 }
 
 #community {
-  padding: 20px;
-
   .riga {
     @include riga;
   }
 }
 
 #visione {
-
   h2 {
     margin-bottom: nth($lista_margini, 6);
     img {
